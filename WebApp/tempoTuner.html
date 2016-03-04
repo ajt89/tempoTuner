@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="lib/jquery-ui.min.css">
+<script src="lib/jquery-1.11.2.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="lib/cloudmine-0.9.12.min.js"> </script>
+<script src="scripts/networkFunctions.js"></script>
+<script src="scripts/cloudmineHandling.js"></script>
+<script src="scripts/errorHandling.js"></script>
+<script src="scripts/statusHandling.js"></script>
+<script src="scripts/formHandling.js"></script>
+<script src="scripts/urlHandling.js"></script>
+<script src="tempoTunerJS.js"></script>
+<link rel="stylesheet" href="tempoTunerCSS.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=616">
+<title>Tempo Tuner</title>
+</head>
+
+<body>
+	<div id="mid" class="mid">
+		<h1>Tempo Tuner</h1>
+		
+		<table class="midTable">
+			<tr>
+				<td> <label for="playlistName" class="header">Playlist Name</label> </td>
+				<td> <input type="text" id="playlistName" placeholder="" class="jqueryText"> </td>
+			</tr>
+			<tr>
+				<td> <label for="tempoRadio" class="header">Tempo</label> </td>
+				<td>
+					<div id="tempoRadio">
+						<input type="radio" id="tempo_s" value="80" name="tempoRadio">
+						<label for="tempo_s">Slow</label> 
+						<input type="radio" id="tempo_m" value="140" name="tempoRadio">
+						<label for="tempo_m">Medium</label>
+						<input type="radio" id="tempo_f" value="200"  name="tempoRadio">
+						<label for="tempo_f">Fast</label>
+						<input type="radio" id="tempo_a" value="any"  name="tempoRadio">
+						<label for="tempo_a">Any</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td> <label for="hipRadio" class="header">Hipster-ness</label> </td>
+				<td>
+					<div id="hipRadio">
+						<input type="radio" id="hip_not" value="0.9999" name="hipRadio">
+						<label for="hip_not">Not hip</label>
+						<input type="radio" id="hip_kinda" value="0.6" name="hipRadio">
+						<label for="hip_kinda">Kinda hip</label>
+						<input type="radio" id="hip_super" value="0.3" name="hipRadio">
+						<label for="hip_super">Super hip</label>
+						<input type="radio" id="hip_any" value="any"  name="hipRadio">
+						<label for="hip_any">Any</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td> <label for="selectGenre" class="header">Genre/Artist</label> </td>
+				<td> <input type="text" id="Genre" placeholder="" class="jqueryText"> </td>
+			</tr>
+			<tr>
+				<td> <label for="spinner" class="header">Max # of Songs</label> </td>
+				<td> <input class="spinner" id="maxSongsSpinner" value="25"> </td>
+			</tr>
+			<tr id="userRow" style="display: none;">
+				<td> <label for="spinner" class="header">Spotify User</label> </td>
+				<td>
+					<div>
+						<label id="userName" class="jqueryText"></label>
+						<a id="logout" class="userIdLinks" target="_blank" href="https://accounts.spotify.com/en/logout">(logout?)</a>
+						<br>
+						<a id="showPreviousPlaylists" class="userIdLinks" href="">(show previous Tempo Tuner playlists?)</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<div class="bottomDiv">
+			<div class="buttonDiv">
+				<button id="playlistButton">Generate Playlist</button>
+			</div>
+			<div class="infoText" id="errorText"></div>
+			<div class="infoText" id="statusText"></div>
+			<div class="infoText" id="previousPlaylists"></div>
+		</div>
+		
+		<div class="bottomText">
+			<a id="echoNestLogo" href="http://the.echonest.com/" target="_blank">
+				<img border="0" alt="http://the.echonest.com/" src="img/EN_P_on_Dark_Transparent_Horizontal.png" width="200" height="30">
+			</a>
+			<a id="spotifyLogo" href="https://www.spotify.com/" target="_blank">
+				<img border="0" alt="https://www.spotify.com/" src="img/rsz_1spotify_logo_rgb_green.png" width="100" height="30">
+			</a>
+			<br>
+			<label>© 2015 - TJ Markham, Allan Tuquero, Shelley Suhling, Keefer Bibby - </label>
+			<a id="emailLink" href="mailto:contacttempotuner@gmail.com" target="_blank">contactTempoTuner@gmail.com</a>
+		</div>
+	</div>
+</body>
+</html>

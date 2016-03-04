@@ -1,0 +1,17 @@
+Your documentation should include a PDF writeup with at least the sections shown below. 
+Figures, tables, a screencast, and screenshots are encouraged!
+
+1) Project Description
+
+2) Project Features
+
+3) Usage 
+(from the user's perspective; pretend you are giving this to a non-tech savvy friend to use)
+
+4) Design and implementation details 
+(from the developer's perspective; pretend you are giving this to a co-op you just hired to help you)
+
+5) Your development log 
+(you should keep this throughout your development process and not simply write it at the end!). 
+Take notes about issues you encountered, where you went to resolve them, and what you did. 
+If you find a bug, make a note of it and note how you solved it.
